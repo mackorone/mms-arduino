@@ -2,7 +2,7 @@
 
 Write a Micromouse maze-solving algorithm with Arduino.
 
-As in, run algorithm code *on a physical Arduino* board, rather than your computer.
+As in, run algorithm code on a physical Arduino board, rather than your computer.
 
 For use with [mackorone/mms](https://github.com/mackorone/mms), a Micromouse simulator.
 
@@ -27,16 +27,13 @@ Linux (Ubuntu):
 
 ## How it works
 
-This repository makes it easy to run Micromouse code on a physical Arduino
-board. Here's how it works:
 1. The Arduino board sends a message to `Main.py`
 1. `Main.py` forwards that message to the simulator
 1. The simulator sends a response back to `Main.py`
 1. `Main.py` forwards that response back to the Arduino board
 
-Here's a diagram:
+![](https://github.com/mackorone/mms-arduino/blob/master/diagram.png)
 
-<img src=https://github.com/mackorone/mms-arduino/blob/master/diagram.png width="133" height="50">
 
 ## pySerial
 
@@ -59,7 +56,7 @@ python.exe -m pip install pyserial
 - You may need to download and install [Arduino](https://www.arduino.cc/en/main/software)
 - You may need to download and install [Python](https://www.python.org/downloads/)
 - Spaces in file paths are not allowed, you may need to change the default Python install path
-- The `--port` argument can be found in the Arduino IDE via `Tools` -> `Port`
+- The `--port` argument can be found in the Arduino IDE via `Tools -> Port`
 - The `--baud` argument needs to match `Serial.begin()` in `mms-arduino.ino`
 - Make sure the Arduino board is connected to your computer before clicking "Run"
 - After clicking "Run" it takes a few seconds for `Main.py` to establish a connection with the Arduino
