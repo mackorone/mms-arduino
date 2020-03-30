@@ -39,17 +39,18 @@ Linux (Ubuntu):
 
 The `Main.py` script uses
 [`pySerial`](https://pyserial.readthedocs.io/en/latest/pyserial.html)
-to communicate with a running Arduino. 
+to communicate with a running Arduino.
+
+To install on Windows:
+```
+python.exe -m pip install pyserial
+```
 
 To install on Linux:
 ```
 sudo python -m pip install pyserial
 ```
 
-To install on Windows:
-```
-python.exe -m pip install pyserial
-```
 
 ## Notes
 
