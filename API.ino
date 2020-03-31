@@ -12,19 +12,19 @@ int mazeHeight() {
     return getInteger("mazeHeight");
 }
 
-int wallFront() {
+bool wallFront() {
     return getBoolean("wallFront");
 }
 
-int wallRight() {
+bool wallRight() {
     return getBoolean("wallRight");
 }
 
-int wallLeft() {
+bool wallLeft() {
     return getBoolean("wallLeft");
 }
 
-int moveForward() {
+bool moveForward() {
     return getAck("moveForward");
 }
 
@@ -96,7 +96,7 @@ void clearAllText() {
     Serial.print("clearAllText\n");
 }
 
-int wasReset() {
+bool wasReset() {
     return getBoolean("wasReset");
 }
 
